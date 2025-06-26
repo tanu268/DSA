@@ -215,6 +215,59 @@ For example:
 
 ---
 
+### 13. Majority Element
+
+- 🔢 Files: `13_majority_element_bf.py`, `13_majority_element_bt.py`, `13_majority_element_op.py`
+
+- 🚶 Brute Force:
+  - Count frequency of each element using nested loops.
+  - ✅ Easy but inefficient (O(n²)).
+
+- ⚙️ Better:
+  - Use a HashMap (dictionary) to track frequencies.
+  - ✅ O(n) time, O(n) space.
+
+- ⚡ Optimal:
+  - Moore’s Voting Algorithm to cancel out non-majority elements.
+  - ✅ O(n) time, O(1) space, most efficient.
+
+---
+
+### 14. Palindrome Number
+
+- 🔢 Files: `14_check_palindrome_no_bf.py`, `14_check_palindrome_no_bt.py`, `14_check_palindrome_no_op.py`
+
+- 🚶 Brute Force:
+  - Convert integer to string and compare with its reverse.
+  - ✅ Simple and readable.
+
+- ⚙️ Better:
+  - Manually reverse the string without slicing.
+  - ✅ Good for understanding string operations.
+
+- ⚡ Optimal:
+  - Reverse half the number mathematically.
+  - ✅ O(log₁₀n) time, O(1) space, no string conversion.
+
+---
+
+### 15. Maximum Subarray
+
+- 🔢 Files: `15_maximum_subarray_bf.py`, `15_maximum_subarray_bt.py`, `15_maximum_subarray_op.py`
+
+- 🚶 Brute Force:
+  - Try every subarray and calculate sum.
+  - ✅ Easy to implement but O(n²) time.
+
+- ⚙️ Better:
+  - Use prefix sum array to compute subarray sums.
+  - ✅ Slightly improved, still O(n²) time.
+
+- ⚡ Optimal:
+  - Kadane’s Algorithm tracks max sum while traversing.
+  - ✅ O(n) time, O(1) space, most efficient.
+
+---
 ## 🧭 How to Use This Repo
 
 1. Pick a problem.

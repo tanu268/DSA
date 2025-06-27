@@ -268,6 +268,26 @@ For example:
   - ✅ O(n) time, O(1) space, most efficient.
 
 ---
+### 14. Largest Element
+
+- 🔢 Files:
+  - `14_largest_element_bf.py`
+  - `14_largest_element_bt.py`
+  - `14_largest_element_op.py`
+
+- 🚶 Brute Force:
+  - For each element, check if any element is greater than it.
+  - ✅ Simple to understand but runs in O(n²) time.
+
+- ⚙️ Better:
+  - Use Python’s built-in `max()` function to get the largest element.
+  - ✅ More readable, still O(n) time, uses internal loop.
+
+- ⚡ Optimal:
+  - Traverse the array once while keeping track of the maximum value.
+  - ✅ O(n) time and O(1) space — most efficient and cleanest approach.
+
+---
 ## 🧭 How to Use This Repo
 
 1. Pick a problem.

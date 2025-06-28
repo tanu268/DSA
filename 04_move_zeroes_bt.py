@@ -15,6 +15,6 @@ def move_zeroes_better(nums):
         nums[i] = 0
 
 # Example
-nums = [0, 1, 0, 3, 12]
+nums = [0, 1, 0, 1, 3, 12]
 move_zeroes_better(nums)
 print(nums)  # Output: [1, 3, 12, 0, 0]

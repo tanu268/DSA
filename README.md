@@ -268,12 +268,12 @@ For example:
   - ✅ O(n) time, O(1) space, most efficient.
 
 ---
-### 14. Largest Element
+### 16. Largest Element
 
 - 🔢 Files:
-  - `14_largest_element_bf.py`
-  - `14_largest_element_bt.py`
-  - `14_largest_element_op.py`
+  - `16_largest_element_bf.py`
+  - `16_largest_element_bt.py`
+  - `16_largest_element_op.py`
 
 - 🚶 Brute Force:
   - For each element, check if any element is greater than it.
@@ -288,6 +288,81 @@ For example:
   - ✅ O(n) time and O(1) space — most efficient and cleanest approach.
 
 ---
+### 17. Union of Two Sorted Arrays
+
+* 🔢 Files:
+
+  * `17_union_sorted_bf.py`
+  * `17_union_sorted_bt.py`
+  * `17_union_sorted_op.py`
+
+* 🚶 Brute Force:
+
+  * Combine both arrays, convert to set for uniqueness, and sort.
+  * ✅ Simple and works, but involves sorting after set conversion.
+  * ⏱ Time: O((n + m) log(n + m))
+
+* ⚙️ Better:
+
+  * Use two pointers and a `set` to collect unique elements during traversal.
+  * ✅ Utilizes the sorted property, avoids unnecessary comparisons.
+  * ⏱ Time: O(n + m), Space: O(n + m)
+
+* ⚡ Optimal:
+
+  * Use two pointers and directly build a result list, skipping duplicates manually.
+  * ✅ Most efficient in terms of time and space (no extra structures like set).
+  * ⏱ Time: O(n + m), Space: O(1) excluding output
+
+---
+
+### 18. Best Time to Buy and Sell Stock
+
+* 🔢 Files:
+
+  * `18_best_stock_bf.py`
+  * `18_best_stock_bt.py`
+  * `18_best_stock_op.py`
+
+* 🚶 Brute Force:
+
+  * Check all pairs `(buy_day, sell_day)` and track maximum profit.
+  * ✅ Easy to implement but slow for large inputs.
+  * ⏱ Time: O(n²)
+
+* ⚙️ Better:
+
+  * Use a prefix-min array to track the minimum price so far at each index.
+  * ✅ Reduces time to linear, but adds O(n) space.
+  * ⏱ Time: O(n), Space: O(n)
+
+* ⚡ Optimal:
+
+  * Single pass with two variables: `min_price_so_far` and `max_profit`.
+  * ✅ O(n) time and O(1) space — the best way to solve this problem.
+  * ⏱ Time: O(n), Space: O(1)
+
+---
+
+### 19. Leaders in an Array
+
+* 🔢 Files:
+
+  * `19_leaders_bf.py`
+  * `19_leaders_op.py`
+
+* 🚶 Brute Force:
+
+  * For each element, check all elements to the right to see if it's a leader.
+  * ✅ Simple logic but very inefficient.
+  * ⏱ Time: O(n²)
+
+* ⚡ Optimal:
+
+  * Traverse from right to left, tracking `max_so_far` to identify leaders.
+  * ✅ Most efficient and intuitive once understood.
+  * ⏱ Time: O(n), Space: O(k) to store leaders, or O(1) if printed
+
 ## 🧭 How to Use This Repo
 
 1. Pick a problem.

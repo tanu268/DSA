@@ -363,6 +363,41 @@ For example:
   * ✅ Most efficient and intuitive once understood.
   * ⏱ Time: O(n), Space: O(k) to store leaders, or O(1) if printed
 
+
+20. Rearrange Array with Alternate Signs
+
+🔢 Files:
+
+20_rearrange_alternate_bf.py
+
+20_rearrange_alternate_bt.py
+
+🚶 Brute Force:
+
+Traverse the array, store positives and negatives in separate lists.
+
+Then merge them alternately into a result list.
+
+✅ Easy to understand, preserves order.
+
+⏱ Time: O(n), Space: O(n + n)
+
+⚙️ Better:
+
+Use two index pointers and directly place values into the result list at correct even/odd positions.
+
+✅ No need for two separate lists, cleaner implementation.
+
+⏱ Time: O(n), Space: O(n)
+
+⚡ Optimal:
+
+In-place rearrangement is not valid here due to order preservation requirement.
+
+✅ So the better approach is also the optimal one in this case.
+
+
+
 ## 🧭 How to Use This Repo
 
 1. Pick a problem.

@@ -396,6 +396,32 @@ In-place rearrangement is not valid here due to order preservation requirement.
 
 ✅ So the better approach is also the optimal one in this case.
 
+21. Next Permutation
+
+🔢 Files:
+
+21_next_permutation_bf.py
+
+21_next_permutation_op.py
+
+🚶 Brute Force:
+
+Generate all permutations, sort them, and return the next one.
+
+❌ Inefficient for large arrays.
+
+⏱ Time: O(n! × n log n), Space: O(n!)
+
+⚡ Optimal:
+
+Traverse from right to left to find the first decreasing element.
+
+Find the next greater element to swap and reverse the suffix.
+
+✅ Time: O(n), Space: O(1), done in-place.
+
+Follows the same logic as C++ STL’s std::next_permutation().
+
 
 
 ## 🧭 How to Use This Repo

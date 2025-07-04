@@ -364,6 +364,7 @@ For example:
   * ⏱ Time: O(n), Space: O(k) to store leaders, or O(1) if printed
 
 
+---
 20. Rearrange Array with Alternate Signs
 
 🔢 Files:
@@ -395,6 +396,7 @@ Use two index pointers and directly place values into the result list at correct
 In-place rearrangement is not valid here due to order preservation requirement.
 
 ✅ So the better approach is also the optimal one in this case.
+---
 
 21. Next Permutation
 
@@ -421,6 +423,79 @@ Find the next greater element to swap and reverse the suffix.
 ✅ Time: O(n), Space: O(1), done in-place.
 
 Follows the same logic as C++ STL’s std::next_permutation().
+---
+22. Longest Consecutive Sequence
+
+🔢 Files:
+
+22_longest_consecutive_bf.py
+
+22_longest_consecutive_bt.py
+
+22_longest_consecutive_op.py
+
+🚶 Brute Force:
+
+For each number, check if it starts a consecutive sequence.
+
+Use a nested loop to track the sequence length.
+
+❌ Inefficient for large inputs.
+
+⏱ Time: O(n²), Space: O(1)
+
+⚙️ Better:
+
+Sort the array and count consecutive streaks.
+
+Avoids duplicates and handles edge cases cleanly.
+
+⏱ Time: O(n log n), Space: O(1) or O(n) depending on sort implementation
+
+⚡ Optimal:
+
+Use a HashSet for O(1) lookups.
+
+Start counting only when current number is the start of a sequence.
+
+✅ Best approach in terms of time and space.
+
+⏱ Time: O(n), Space: O(n)
+
+📌 Applications
+
+Real-Life Applications:
+
+Activity Tracking:
+
+Find the longest streak of continuous activity (like steps, coding days, login streaks).
+
+Database Record Analysis:
+
+Detect consecutive record days with valid entries, sales, or production data.
+
+Gaming Achievement Systems:
+
+Unlock rewards based on longest consecutive wins, plays, or achievements.
+
+IoT Device Monitoring:
+
+Identify uninterrupted sensor activity or signal over consecutive time intervals.
+
+Financial Analysis:
+
+Analyze consecutive trading days with gains/losses for investment pattern recognition.
+
+Algorithmic Concepts Practiced:
+
+Hashing for O(1) lookup
+
+Sequence identification and tracking
+
+Set operations and search optimization
+
+
+---
 
 
 

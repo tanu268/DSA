@@ -495,7 +495,101 @@ Sequence identification and tracking
 Set operations and search optimization
 
 
+---### 23. Set Matrix Zeroes
+
+- 🔢 Files:
+  - `23_set_matrix_zero_bf.py`
+  - `23_set_matrix_zero_bt.py`
+  - `23_set_matrix_zero_op.py`
+
+- 🚶 Brute Force:
+  - For each 0, mark all elements in its row and column as `-1` (if not already 0).
+  - Then convert all `-1` values to `0`.
+  - ✅ Easy to implement but inefficient on large inputs.
+  - ⏱ Time: O(m × n × (m + n)), Space: O(1)
+
+- ⚙️ Better:
+  - Use extra row and column arrays to mark which rows and columns need to be zeroed.
+  - ✅ Cleaner and linear in time.
+  - ⏱ Time: O(m × n), Space: O(m + n)
+
+- ⚡ Optimal:
+  - Use the first row and first column of the matrix as markers.
+  - Store the state of first column separately.
+  - ✅ Most space-efficient, modifies the matrix in-place.
+  - ⏱ Time: O(m × n), Space: O(1)
+
 ---
+
+### 📌 Applications
+
+**Real-Life Applications:**
+
+1. **Spreadsheet Software:**
+   - Automatically setting entire row/column to null when a value is invalid (e.g., Google Sheets, Excel).
+
+2. **Image Processing:**
+   - Masking or blackout rows/columns based on specific pixel values.
+
+3. **Data Cleaning:**
+   - In tabular data, zeroing out rows/columns after finding missing or corrupted entries.
+
+4. **System Fault Detection:**
+   - Deactivating rows/columns in circuit matrices or sensor data.
+
+**Algorithmic Concepts Practiced:**
+- In-place updates
+- Matrix traversal
+- Space optimization
+
+---
+
+### 24. Rotate Matrix by 90 Degrees
+
+- 🔢 Files:
+  - `24_rotate_matrix_bf.py`
+  - `24_rotate_matrix_bt.py`
+  - `24_rotate_matrix_op.py`
+
+- 🚶 Brute Force:
+  - Create a new matrix and place elements in rotated positions.
+  - Copy back to the original matrix.
+  - ✅ Easy but not space-efficient.
+  - ⏱ Time: O(n²), Space: O(n²)
+
+- ⚙️ Better (Transpose + Reverse):
+  - Transpose the matrix (i.e., rows become columns), then reverse each row.
+  - ✅ Clean and readable.
+  - ⏱ Time: O(n²), Space: O(1)
+
+- ⚡ Optimal:
+  - Rotate the matrix layer by layer (ring-wise) with 4-way in-place swapping.
+  - ✅ Most optimal solution with no extra space.
+  - ⏱ Time: O(n²), Space: O(1)
+
+---
+
+### 📌 Applications
+
+**Real-Life Applications:**
+
+1. **Image Rotation:**
+   - Common in camera apps, photo editors, and graphic processing.
+
+2. **Matrix-Based Games:**
+   - Game boards like Tetris or rotating game maps.
+
+3. **Data Visualization:**
+   - Rotating heatmaps or matrix plots for better orientation.
+
+4. **AI/ML Preprocessing:**
+   - Image data augmentation via rotation in computer vision tasks.
+
+**Algorithmic Concepts Practiced:**
+- Matrix manipulation
+- Transpose + reverse
+- In-place element rotation
+- Layer-wise traversal
 
 
 

@@ -591,6 +591,42 @@ Set operations and search optimization
 - In-place element rotation
 - Layer-wise traversal
 
+-------
+### 25. Spiral Matrix Traversal
+
+- 🔢 Files:
+  - `25_spiral_matrix.py`
+
+- ⚡ Optimal (Boundary Simulation):
+  - Use four pointers: `top`, `bottom`, `left`, and `right` to simulate the spiral.
+  - Traverse the matrix in layers by shrinking the boundaries after each direction.
+  - ✅ Clean, efficient, and works for any `m x n` matrix.
+  - ⏱ Time: O(m × n), Space: O(1) (excluding output list)
+
+---
+
+### 📌 Applications
+
+**Real-Life Applications:**
+
+1. **Matrix-based Printing:**
+   - Spiral printing of data in visualization dashboards or tabular representations.
+
+2. **Image and Pixel Manipulation:**
+   - Traversing pixels for specific spiral pattern algorithms in computer vision.
+
+3. **Memory Access Patterns:**
+   - Reading/writing 2D data in spiral form for compression or cache optimization.
+
+4. **Path Planning Algorithms:**
+   - Robot vacuum movement simulation or drone area coverage.
+
+**Algorithmic Concepts Practiced:**
+- Matrix boundary traversal
+- Directional movement logic
+- Two-pointer manipulation
+
+
 
 
 ## 🧭 How to Use This Repo

@@ -626,6 +626,48 @@ Set operations and search optimization
 - Directional movement logic
 - Two-pointer manipulation
 
+### 26. Second Largest Element in an Array
+
+- 🔢 Files:
+  - `26_second_largest_bf.py`
+  - `26_second_largest_bt.py`
+  - `26_second_largest_op.py`
+
+- 🚶 Brute Force:
+  - Sort the array and pick the second largest unique element.
+  - ✅ Simple and readable but not optimal.
+  - ⏱ Time: O(n log n), Space: O(1) (in-place sort)
+
+- ⚙️ Better:
+  - First, find the largest element.
+  - Then, traverse again to find the largest among the rest.
+  - ✅ Efficient but requires two passes.
+  - ⏱ Time: O(n), Space: O(1)
+
+- ⚡ Optimal:
+  - Traverse once while tracking both the largest and second largest simultaneously.
+  - ✅ Most efficient and clean approach.
+  - ⏱ Time: O(n), Space: O(1)
+
+---
+
+### 📌 Applications
+
+**Real-Life Applications:**
+
+1. **Leaderboard Systems:**
+   - Identify the second top performer in games, exams, sales, etc.
+
+2. **Stock Market Analysis:**
+   - Find second-best performing stocks or trends in a dataset.
+
+3. **Data Ranking Problems:**
+   - Useful in competitions or recommendation systems.
+
+**Algorithmic Concepts Practiced:**
+- Array traversal
+- Conditional updates
+- In-place optimization
 
 
 

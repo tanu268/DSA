@@ -669,6 +669,60 @@ Set operations and search optimization
 - Conditional updates
 - In-place optimization
 
+# Day 27 – Count Digits in a Number
+
+## 🧮 Problem Statement
+
+Given a natural number `n`, return the number of digits in it.
+
+---
+
+## 🔢 Files
+
+- `27_count_digits_bf.py` – Brute Force Approach  
+- `27_count_digits_bt.py` – Better Iterative Approach  
+- `27_count_digits_op.py` – Optimal Logarithmic Approach
+
+---
+
+## 🚶 Brute Force
+
+- Convert the number to a string and count its length using `len(str(n))`.
+- ✅ Simple and easy to understand.
+- ⏱ **Time Complexity:** O(log₁₀n)  
+- 📦 **Space Complexity:** O(log₁₀n) (string representation)
+
+```python
+class Solution:
+    def countDigits(self, n):
+        return len(str(n))
+
+📌 Applications
+🔗 Real-Life Use Cases
+Mobile Number Validation:
+Ensure the input has the correct number of digits (e.g., 10-digit phone numbers).
+
+Banking Systems:
+Digit constraints in account numbers, card numbers, and PINs.
+
+ID Format Checking:
+Verify fixed-length numeric IDs (e.g., 6-digit OTP, 8-digit invoice number).
+
+Analytics and Reporting:
+Format numbers or determine digit-based thresholds in financial/statistical reports.
+
+💡 Algorithmic Concepts Practiced
+Type conversion (int to str)
+
+Math functions (log10)
+
+Loop-based number manipulation
+
+Space and time optimization strategies
+
+
+
+
 
 
 ## 🧭 How to Use This Repo

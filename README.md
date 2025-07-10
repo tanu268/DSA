@@ -720,6 +720,33 @@ Loop-based number manipulation
 
 Space and time optimization strategies
 
+#### 🔄 Reverse Integer
+
+- 🔢 Files:
+  - `28_reverse_integer.py`
+
+- ✅ Logic:
+  - Pop digits from the number and build the reversed number.
+  - Handle 32-bit signed integer overflow.
+  - Works for both positive and negative integers.
+  - ⏱ Time: O(log₁₀n), Space: O(1)
+
+---
+
+### 📌 Applications
+
+**Reverse Integer:**
+- Used in number manipulation algorithms.
+- Helps in learning digit-based logic (like palindromes).
+- Good prep for overflow and edge case handling.
+
+**Sorted & Rotated Check:**
+- Useful in circular arrays, rotated searches, and array validation logic.
+
+**Concepts Practiced:**
+- Loop control and boundary conditions
+- Integer operations (modulus, division)
+- Overflow and wraparound detection
 
 
 
